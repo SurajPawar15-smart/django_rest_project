@@ -3,5 +3,6 @@ from . import views
 
 urlpatterns = [
     path('students/', views.studentsView, name='studentsList'), # handle GET and POST
+    path('students/<int:pk>/', views.StudentDetailView), # GET, PUT, DELETE
 
 ]
